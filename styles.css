@@ -1,0 +1,257 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+.h{
+    width: 329px;
+}
+body{
+    font-family: 'Inter',sans-serif;
+    padding: 2rem 10px;
+   font-size: 1.5rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+img{
+    object-fit:cover;
+}
+footer{
+    display: grid;
+    gap: 1rem;
+}
+.old{
+    display: flex;
+    width: 320px;
+    max-height: 14rem;
+}
+.num{
+    margin-block: 0 0.7rem;
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.title{
+    margin-block: 1rem 1rem;
+    color:  hsl(240, 100%, 5%);
+}
+.old img{
+    width: 25%;
+    margin-right: 1.8rem;
+}
+.old p{
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+@media screen and (min-width:784px) {
+    footer{
+        grid-template-columns: repeat(3,1fr);
+        padding: 0.5rem;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .old p{
+          margin: 0;
+    }
+    
+}
+.four{
+    background-color:  hsl(240, 100%, 5%);
+    color: white;
+    grid-area: four;
+    padding: 2rem 10px;
+    margin-block: 4rem
+}
+.four p{
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+.new{
+    width: 320px;
+}
+.four> article:nth-child(2),.four> article:nth-child(3){
+    border-bottom:1px solid white ;
+}
+.three{
+    grid-area: three;
+}
+.three p{
+    color: rgb(140, 132, 140);
+    word-spacing: 0.2rem;
+}
+button{
+    outline: 0;
+    border: 0;
+    padding: 1.3rem 2rem ;
+    margin-block:1.4rem ;
+    background-color:hsl(5, 85%, 63%);
+}
+a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+.two{
+    font-size: 5rem;
+    font-weight: 800;
+    grid-area: two;
+    /* margin-top: 2rem; */
+    color: rgb(3,0,24);
+}
+.two p{
+    margin-block: 1rem;
+
+}
+.one{
+    width: 320px;
+    grid-area: one;
+    /* height: 300px; */
+    object-fit: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3rem;
+}
+.c{
+    display: none;
+}
+.but{
+    display: inline-block;
+    margin-right: 0.6rem;
+}
+li:hover,.title:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.four header{
+    font-size: 5rem;
+    color: hsl(35, 77%, 62%);
+}
+
+.new h2:hover{
+color:  hsl(35, 77%, 62%);
+cursor: pointer;
+}
+button:hover{
+    background-color:   hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+.but:hover{
+    opacity: 0.6;
+}
+ul{
+    list-style-type: none;
+    width: 70vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.close{
+    display: inline-block;
+margin-left: 14rem;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.three,.one,.two{
+    width: 350px;
+}
+    nav{
+        display: none;
+    }
+    #ok:target {
+        display: block;
+    }
+    nav a{
+        color: black;
+        letter-spacing: 0.1rem;
+    }
+    nav a:hover{
+        opacity: 0.6;
+    }
+@media screen and (min-width:768px) {
+    .three,.one,.two{
+        width: 100%;
+    }
+    
+    body{
+        padding:3rem;
+    }
+    .c{
+        display: block;
+    }
+    .close{
+        display: none;
+    }
+    
+    .four{
+        margin-top: 0;
+    }
+    .flex{
+        margin-right: 70%;
+        gap: 3rem;
+    }
+    .m{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        gap: 3rem;
+        list-style-type:none ;
+        margin-right: 5rem;
+    }
+    .co{
+        display: block;
+        width:100%;
+        object-fit: cover;
+    }
+    main{
+        display: grid;
+        grid-template-columns: reeat(3,1fr);
+        gap: 2rem;
+        grid-template-areas: 
+        "one one four"
+        "two three four";
+    }
+    .new p{
+        margin-bottom: 1rem;
+        line-height: 2rem;
+    }
+    .two{
+        font-size: 4rem;
+    }
+     ul{
+        display: flex;
+        position: relative;
+        gap: 2.5rem;
+        margin-right: 2rem;
+        width: auto;
+        flex-direction: row;
+        height: auto;
+        margin-block: auto;
+    } 
+    .h{
+        width: 100%;
+    }
+    .but{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+} 
