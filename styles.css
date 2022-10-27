@@ -253,5 +253,15 @@ ul{
     }
     nav{
         display: flex;
+        align-items: center;
+        
     }
 } 
+@media screen and (max-width:767px) {
+li{
+    margin-right: 4rem;
+}    
+.old p{
+    margin-bottom: 1.6rem;
+}
+}
